@@ -838,7 +838,6 @@ a {
   letter-spacing: 0%;
   color: rgba(0, 0, 0, 0.2);
   padding-left: 20px;
-  cursor: pointer;
 }
 .phone-number:hover,
 .email-hero:hover,
@@ -884,7 +883,7 @@ a {
 }
 
 .form-button {
-  width: 540px;
+  max-width: 540px;
   height: 56px;
   border-radius: 6px;
   background: rgba(0, 189, 248, 1);
@@ -900,8 +899,10 @@ a {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: center;
-  padding-left: 195px;
   padding-top: 14px;
+  place-items: center;
+  margin: 0 auto;
+  align-items: center;
   color: rgba(255, 255, 255, 1);
 }
 .form-button:hover {
@@ -1010,6 +1011,137 @@ a {
   transform: rotate(1turn);
   transition: all 0.5s ease;
 }
+@media (max-width: 1110px) {
+  .our-team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin: 0 auto;
+  }
+  .choose-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin: 0 auto;
+  }
+  .benefits {
+    width: 255px;
+    height: 212px;
+  }
+  .containers {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    place-items: center;
+  }
+  .category-section {
+    height: 100%;
+  }
+  .category-bottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+  .reviews {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+  .partners-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+  .form-button {
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+}
+@media (max-width: 1090px) {
+  .main-list_titles {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-list_titles {
+    display: none;
+  }
+  .header-hero h2 {
+    font-size: 54px;
+    line-height: 58px;
+  }
+  .team-section h2 {
+    font-size: 54px;
+    line-height: 58px;
+  }
+  .our-team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    place-items: center;
+    margin: 0 auto;
+  }
+  .choose-section h4 {
+    font-size: 54px;
+    line-height: 58px;
+  }
+  .choose-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    place-items: center;
+    margin: 0 auto;
+  }
+  .benefits {
+    width: 255px;
+    height: 212px;
+  }
+  .containers {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    place-items: center;
+    margin: 0 auto;
+  }
+  .containers img {
+    width: 299px;
+    height: 320px;
+  }
+  .category-section {
+    height: 100%;
+  }
+  .category-bottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    place-items: center;
+  }
+  .testimonials-section h4 {
+    font-size: 54px;
+    line-height: 58px;
+  }
+  .reviews {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    margin: 0 auto;
+  }
+  .partners-section h4 {
+    font-size: 54px;
+    line-height: 58px;
+  }
+  .partners-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    place-items: center;
+    margin: 0 auto;
+  }
+  .form-button {
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+}
+
+/*  */
+@media (max-width: 720px) {
+}
 
 /* responsive section start 640px */
 @media (max-width: 640px) {
@@ -1099,6 +1231,9 @@ a {
     place-items: center;
     margin: 0 auto;
   }
+  .input-wrapper input {
+    width: 400px;
+  }
   .choose-container {
     display: grid;
     grid-template-columns: repeat(1, 4fr);
@@ -1164,5 +1299,37 @@ a {
   .surgical-table img,
   .surgical-table-right img {
     width: 350px;
+  }
+  .testimonials-section h4 {
+    font-size: 32px;
+  }
+  .reviews-left {
+    max-width: 350px;
+    height: 100%;
+  }
+
+  .reviews-right {
+    max-width: 350px;
+    height: 100%;
+  }
+  .partners-section h4 {
+    font-size: 32px;
+  }
+  .partners-container {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+  }
+  .footer-list-titles {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    place-items: center;
+    margin: 0 auto;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 459px) {
+  .input-wrapper input {
+    max-width: 300px;
   }
 }
